@@ -132,7 +132,7 @@ article ul {
 }
 
 article ul li::before {
-	content: "❀"; /* Insert content that looks like bullets */
+	content: "❀";
   	padding-right: 15px;
   	color: var(--color2);
 }
