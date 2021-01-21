@@ -12,7 +12,7 @@
 body {
 	width: 70%;
 	margin: 0 auto;
-	font-size: 1.25em;
+	font-size: 1.15em;
 }
 
 .social-media {
@@ -123,9 +123,6 @@ article > img {
 }
 
 .preparation {
-	clear:left;
-}
-
-h2 {
-	padding-top: 30px;
+	border: solid 1px white;
+	clear: both;
 }
