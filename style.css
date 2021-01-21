@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+:root{
+	--color1: #242331;
+	--color2: #533e2d;
+	--color3: #a27035;
+	--color4: #b88b4a;
+	--color5: #ddca7d;
+	--color6: #f8edeb;
+}
+
+body {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 1.25em;
+}
+
+.social-media {
+    float:right;
+}
+
+.social-media li {
+	display: inline;
+}
+
+.social-media li img {
+	padding-left: 10px;
+}
+
+header {
+	background-color: var(--color6);
+	overflow: auto;
+	padding: 20px 20px;
+	border-radius: 10px;
+}
+
+header img {
+	vertical-align: middle;
+	float: left;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header span:nth-of-type(1) {
+	font-size: 40px; 
+	color: var(--color3); 
+	padding-left: 20px;
+}
+
+header span:nth-of-type(2) {
+	padding-left: 20px;
+	color: var(--color2);
+}
+
+nav {
+	clear: left;
+	text-align: center;
+	padding: 20px 0px;
+	font-family: 'Rakkas', cursive;
+}
+
+nav a {
+	color: var(--color3);
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 1.5em;
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+
+nav a:hover {
+	background-color: var(--color2);
+	color: var(--color5);
+  }
+
+a {
+	color: var(--color3);
+	text-decoration: none;
+}
+
+h1 {
+	color: var(--color2);
+	font-size: 2em;
+}
+
+footer li, nav li {
+	display: inline;
+}
+
+footer li:nth-of-type(2), nav li:nth-of-type(2) {
+	display: inline;
+	padding-left: 20px; 
+	padding-right: 20px;
+}
+
+table th:nth-of-type(1) {
+	padding:10px;
+	text-align: left;
+}
+
+table th, table td {
+	padding:10px;
+}
+
+footer {
+	text-align: center; 
+	font-size: smaller;
+	background-color: var(--color6);
+	padding: 5px 0px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.ingredients {
+	float: left;
+	margin-left: 40px;
+}
+
+article > img {
+	float: left;
+}
+
+.preparation {
+	clear:left;
+}
+
+h2 {
+	padding-top: 30px;
+}
