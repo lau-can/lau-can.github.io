@@ -20,7 +20,9 @@ header {
 	background-color: var(--c5);
 	vertical-align: middle;
 	position: sticky;
-  	top: 0;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 header img {
