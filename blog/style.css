@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&family=Play&display=swap');
+
+:root {
+	--c1:#03045e;
+	--c2:#0077b6;
+	--c3:#00b4d8;
+	--c4:#90e0ef;
+	--c5:#caf0f8;
+}
+
+html, body {
+	width: 80%;
+	font-family: 'Play', sans-serif;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	border-radius: 20px;
+	background-color: var(--c5);
+	vertical-align: middle;
+	position: sticky;
+  	top: 0;
+}
+
+header img {
+	margin: 20px;
+	vertical-align: middle;
+}
+
+header ul {
+	float: right;
+	padding-inline-start: 0px;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+header li {
+	list-style-type: none;
+	display: inline;
+	padding: 30px 30px;
+	text-transform: uppercase;
+	color: var(--c1);
+}
+
+header span {
+	font-size: 2em;
+	font-weight: bold;
+	color: var(--c1);
+}
+
+.middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article {
+	border: 5px solid var(--c4);
+	border-radius: 20px;
+	padding: 5px;
+	margin: 5px;
+	flex: 200px;
+}
+
+aside {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border: none;
+	background-color: var(--c2);
+	color: white;
+	font-weight: bold;
+	padding:20px;
+	border-radius: 20px;
+	margin: 5px;
+}
+
+aside div {
+	/* If removed, moves text down */
+	width: 100px;
+
+}
+
+aside div img {
+	padding: 10px 10px 10px 0px;
+	vertical-align: middle;
+}
+
+footer {
+	width: 100%;
+	border-radius: 20px;
+	background-color: var(--c1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--c5);
+}
+
+footer div:last-child {
+	margin-bottom: 20px;
+}
+
+footer ul {
+	padding-inline-start: 0px;
+}
+
+a {
+	color: var(--c5);
+	text-decoration: none;
+	font-size: large;
+}
+
+a:hover {
+	color: var(--c1);
+  }
+
+header ul  a {
+	color: var(--c5);
+	text-decoration: none;
+	font-size: large;
+}
+
+header ul a:hover {
+	color: var(--c1);
+	background-color: var(--c4);
+	font-weight: bold;
+	padding: 10px;
+}
+
+.social-media li {
+	display: inline;
+}
+
+.social-media li img {
+	padding-left: 10px;
+}
+
