@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>User edit</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
     <header>
         <div>
@@ -26,7 +24,26 @@
     </header>
     <div class="middle">
         <section>
-            <!-- Content to be added here -->
+            <form>
+                <div><p class="home"><a href="../index.html">Go back</p></a></div>
+                <div>
+                    <label>About:</label>
+                    <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label>Current position:</label>
+                    <input type="text" id="current-position" name="current-position">
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email" id="e-mail" name="e-mail">
+                </div>
+                <div>
+                    <button class="button" type="submit">Upload picture</button>&nbsp;&nbsp;&nbsp;
+                    <button class="button" type="submit">Save</button>
+                    
+                </div>
+            </form>
         </section>
         <aside>
             <div>
@@ -59,5 +76,4 @@
         </div>
     </footer>
 </body>
-
 </html>
