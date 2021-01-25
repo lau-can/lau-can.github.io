@@ -158,9 +158,9 @@ form {
 	flex-direction: column;
 	justify-content: space-evenly;
 	border: 5px solid var(--c5);
-	height: 400px;
 	border-radius: 20px;
 	margin: 5px;
+	background-color: rgba(202,240,248,0.2);
 }
 
 form div {
@@ -176,6 +176,8 @@ form div {
 	padding:13px 32px;
 	font-family: 'Play', sans-serif;
 	font-size: larger;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 .button:hover {
 	background-color:var(--c2);
@@ -191,7 +193,7 @@ form div {
 
 input[type="text"],[type="email"],[type="password"] {
 	height: 26px;
-	margin-left: 10px;
+	margin: 20px 10px;
 	border: 1px solid var(--c2)
 }
 
@@ -248,4 +250,39 @@ p.profile-title{
 .tile-author {
 	font-style: italic;
 	font-size: smaller;
+}
+
+.middle-registration {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.middle-registration section {
+	flex-grow: 2;
+	display: flex;
+	justify-content: center;
+}
+
+.middle-user-edit {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.middle-user-edit section {
+	flex-grow: 2;
+	display: flex;
+	justify-content: center;
+}
+
+.middle-user-edit section form div label:first-child {
+	margin-right: 20px;
+}
+
+.middle-user-edit section form div textarea {
+	margin-right: 10px;
+}
+
+.middle-user-edit section form div:nth-of-type(2) {
+	display: flex;
+	align-content: center;
 }
