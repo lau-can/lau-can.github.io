@@ -19,11 +19,13 @@ header {
 	border-radius: 20px;
 	background-color: var(--c5);
 	vertical-align: middle;
-	position: sticky;
+	position: sticky; /* parent container must be set to hight: auto;*/
 	top: 0;
 	display: flex;
 	justify-content: space-between;
 }
+
+
 
 header img {
 	margin: 20px;
@@ -75,7 +77,7 @@ aside {
 	justify-content: center;
 	flex-direction: column;
 	border: none;
-	background-color: var(--c2);
+	background-color: var(--c3);
 	color: white;
 	font-weight: bold;
 	padding:20px;
@@ -113,7 +115,7 @@ footer ul {
 }
 
 a {
-	color: var(--c5);
+	color: black;
 	text-decoration: none;
 	font-size: large;
 }
@@ -123,7 +125,7 @@ a:hover {
   }
 
 header ul  a {
-	color: var(--c5);
+	color: black;
 	text-decoration: none;
 	font-size: large;
 }
@@ -194,12 +196,12 @@ form div {
 input[type="text"],[type="email"],[type="password"] {
 	height: 26px;
 	margin: 20px 10px;
-	border: 1px solid var(--c2)
+	border: 1px solid var(--c2);
 }
 
-input[type="text"]:focus{
-	/* Remove black line */
-	color: black; /* dummy instruction */
+input[type="password"]:focus{
+	outline-color: red;
+	cursor: crosshair;
 }
 
 .user-info {

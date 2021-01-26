@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Laurentiu-Antonin Cancel"> 
+	<title>Codecool CSS logo</title>
+</head>
+
+<style>
+	html {height:100%;}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+	.parent {
+		width:500px;
+		height:500px;
+		position: relative;
+	}
+
+	.blue {
+		width: 400px;
+		height: 400px;
+		background-color: #008fc4;
+		transform: rotate(45deg);
+		border-radius: 20%;
+		z-index: -1;
+		position: absolute;
+		top:50px;
+		left:50px;
+	}
+
+	.center-square {
+		width: 150px;
+		height: 150px;
+		background-color: white;
+		transform: rotate(45deg);
+		position: absolute;
+		top:175px;
+		left:175px;
+		z-index: 999;
+	}
+
+	.red-top {
+		width: 275px;
+		height: 275px;
+		background-color: #dd2b30;
+		transform: rotate(45deg);
+		z-index: 0;
+		position: absolute;
+		top:23px;
+		left:113px;
+		border-radius: 30%;
+	}
+
+	.blue-right {
+		width: 275px;
+		height: 275px;
+		background-color:#008fc4;
+		transform: rotate(45deg);
+		z-index: 1;
+		position: absolute;
+		top:113px;
+		left:201px;
+		border-radius: 30%;
+	}
+
+	.red-bottom {
+		width: 275px;
+		height: 275px;
+		background-color: #dd2b30;
+		transform: rotate(45deg);
+		z-index: 2;
+		position: absolute;
+		top:202px;
+		left:114px;
+		border-radius: 30%;
+	}
+
+	.blue-left {
+		width: 150px;
+		height: 300px;
+		background-color:#008fc4;
+		transform: rotate(45deg);
+		z-index: 3;
+		position: absolute;
+		top:136px;
+		left:140px;
+		border-radius: 50%;
+	}
+
+	.blue-patch {
+		width: 125px;
+		height: 125px;
+		background-color:#008fc4;
+		transform: rotate(45deg);
+		z-index: 4;
+		position: absolute;
+		top:241px;
+		left:47px;
+		border-radius: 0%;
+	}
+</style>
+<body>
+	<div class="parent">
+		<div class="blue"></div>
+		<div class="red-top"></div>
+		<div class="blue-right"></div>
+		<div class="red-bottom"></div>
+		<div class="blue-left"></div>
+		<div class="center-square"></div>
+		<div class="blue-patch"></div>
+	</div>
+</body>
+</html>
