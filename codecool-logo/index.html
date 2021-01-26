@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Laurentiu-Antonin Cancel"> 
+	<meta name="author" content="Laurentiu-Antonin Cancel">
 	<title>Codecool CSS logo</title>
 </head>
 
 <style>
-	html {height:100%;}
+	html {
+		height: 100%;
+	}
+
 	body {
 		display: flex;
 		justify-content: center;
@@ -16,10 +20,31 @@
 		height: 100%;
 		width: 100%;
 	}
+
 	.parent {
-		width:500px;
-		height:500px;
+		width: 500px;
+		height: 500px;
 		position: relative;
+	}
+
+	@keyframes red2blue {
+		from {
+			background-color: #dd2b30;
+		}
+
+		to {
+			background-color: #008fc4;
+		}
+	}
+
+	@keyframes blue2red {
+		from {
+			background-color: #008fc4;
+		}
+
+		to {
+			background-color: #dd2b30;
+		}
 	}
 
 	.blue {
@@ -30,8 +55,13 @@
 		border-radius: 20%;
 		z-index: -1;
 		position: absolute;
-		top:50px;
-		left:50px;
+		top: 50px;
+		left: 50px;
+		animation-duration: 3s;
+		animation-name: blue2red;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-delay: 3s;
 	}
 
 	.center-square {
@@ -40,8 +70,8 @@
 		background-color: white;
 		transform: rotate(45deg);
 		position: absolute;
-		top:175px;
-		left:175px;
+		top: 175px;
+		left: 175px;
 		z-index: 999;
 	}
 
@@ -52,21 +82,31 @@
 		transform: rotate(45deg);
 		z-index: 0;
 		position: absolute;
-		top:23px;
-		left:113px;
+		top: 23px;
+		left: 113px;
 		border-radius: 30%;
+		animation-duration: 3s;
+		animation-name: red2blue;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-delay: 3s;
 	}
 
 	.blue-right {
 		width: 275px;
 		height: 275px;
-		background-color:#008fc4;
+		background-color: #008fc4;
 		transform: rotate(45deg);
 		z-index: 1;
 		position: absolute;
-		top:113px;
-		left:201px;
+		top: 113px;
+		left: 201px;
 		border-radius: 30%;
+		animation-duration: 3s;
+		animation-name: blue2red;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-delay: 3s;
 	}
 
 	.red-bottom {
@@ -76,35 +116,51 @@
 		transform: rotate(45deg);
 		z-index: 2;
 		position: absolute;
-		top:202px;
-		left:114px;
+		top: 202px;
+		left: 114px;
 		border-radius: 30%;
+		animation-duration: 3s;
+		animation-name: red2blue;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-delay: 3s;
 	}
 
 	.blue-left {
 		width: 150px;
 		height: 300px;
-		background-color:#008fc4;
+		background-color: #008fc4;
 		transform: rotate(45deg);
 		z-index: 3;
 		position: absolute;
-		top:136px;
-		left:140px;
+		top: 136px;
+		left: 140px;
 		border-radius: 50%;
+		animation-duration: 3s;
+		animation-name: blue2red;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-delay: 3s;
 	}
 
 	.blue-patch {
 		width: 125px;
 		height: 125px;
-		background-color:#008fc4;
+		background-color: #008fc4;
 		transform: rotate(45deg);
 		z-index: 4;
 		position: absolute;
-		top:241px;
-		left:47px;
+		top: 241px;
+		left: 47px;
 		border-radius: 0%;
+		animation-duration: 3s;
+		animation-name: blue2red;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-delay: 3s;
 	}
 </style>
+
 <body>
 	<div class="parent">
 		<div class="blue"></div>
@@ -116,4 +172,5 @@
 		<div class="blue-patch"></div>
 	</div>
 </body>
+
 </html>
