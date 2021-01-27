@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<title>Team generator</title>
+</head>
+
+<body>
+	<div class="container">
+		
+		<div class="form">
+			<div>
+				<h1>Random team generator</h1>
+			</div>
+			<div>
+				<label>Names list:</label>
+				<textarea id="namesList" cols="30" rows="14"></textarea>
+			</div>
+			<div>
+				<label># of teams:</label>
+				<input type="text" id="Nteams" value="7">
+			</div>
+			<div>
+				<label># of people per team:</label>
+				<input type="text" id="Npeople" value="2">
+			</div>
+			<div>
+				<button class="button" onclick="genTeam()">Generate</button>
+			</div>
+			<div>
+				<p>RESULTS:</p>
+			</div>
+			<div>
+				<p id="results"></p>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	margin:50px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.form {
+	margin:20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.form div {
+	align-self: flex-end;
+	display: flex;
+	margin:10px;
+}
+
+.form div label {
+	margin-right: 20px;
+}
+
+.button {
+	background-color:teal;
+	border-radius:8px;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	padding:13px 32px;
+	font-family: 'Play', sans-serif;
+	font-size: larger;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.button:hover {
+	background-color:black;
+	color: white;
+}
+.button:active {
+	position:relative;
+	top:2px;
+	/* Doesn't remove border when clicked */
+	border-radius:8px;
+	border: none;
+}
