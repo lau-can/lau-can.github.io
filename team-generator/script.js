@@ -22,14 +22,12 @@ function genTeam() {
 			namesList.splice(currentNameIdx-1,1);
 			j++;
 			temp = Team[i];
-			console.log("temp: "+temp);
 		}
 		i++;
 		j=0;
 		HTMLtable = HTMLtable+"Team "+i+": "+temp.toString()+"<br/>";
 	  }
 	document.getElementById("results").innerHTML = HTMLtable;
-
 }
 
 function getRandomInt(max) {
