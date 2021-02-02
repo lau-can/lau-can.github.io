@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --c1: #03045e;
+    --c2: #023e8a;
+    --c3: #0077b6;
+    --c4: #0096c7;
+    --c5: #00b4d8;
+    --c6: #48cae4;
+    --c7: #90e0ef;
+    --c8: #ade8f4;
+    --c9: #caf0f8;
+    --c10: #559ab7;
+}
+
+html {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fahkwang', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-image: url("../assets/images/water-3.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    transition: 2s ease;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 100px;
+    transition: 2s ease;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--c10);
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    /* displays menu items inline */
+    margin: 0px 20px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* gets out of normal html flow */
+}
+
+nav ul li:hover>ul {
+    display: list-item;
+    background-color: var(--c10);
+}
+
+nav ul ul li {
+    display: list-item;
+    /* displays 2nd list as column */
+}
+
+
+main {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 20px 20px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 210px auto 60px;
+    grid-template-areas: "image""text""button";
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.5s ease;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 25px rgba(0, 150, 199, 0.3);
+}
+
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 25px rgba(0, 150, 199, 0.6);
+}
+
+.article-image {
+    grid-area: image;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.image-1 {
+    background-image: url("../assets/images/water-19.jpg");
+}
+
+.image-2 {
+    background-image: url("../assets/images/water-18.jpg");
+}
+
+.image-3 {
+    background-image: url("../assets/images/water-17.jpg");
+}
+
+.image-4 {
+    background-image: url("../assets/images/water-16.jpg");
+}
+
+.image-5 {
+    background-image: url("../assets/images/water-15.jpg");
+}
+
+.image-6 {
+    background-image: url("../assets/images/water-14.jpg");
+}
+
+.article-text {
+    grid-area: text;
+    text-align: justify;
+    background-color: rgba(202, 240, 248, 0.2);
+    padding: 15px;
+}
+
+.article-text h2 {
+    text-align: center;
+}
+
+.article-button {
+    grid-area: button;
+    background-color: rgba(202, 240, 248, 0.2);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+button {
+    padding: 0.5em 3em;
+    background-color: var(--c9);
+    border: 0.16em solid var(--c1);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--c1);
+    text-align: center;
+}
+
+button:hover {
+    color: var(--c9);
+    background-color: var(--c1);
+}
+
+button:active {
+    color: var(--c6);
+    background-color: var(--c1);
+}
+
+footer {
+    width: 100%;
+    background-image: url("../assets/images/water-4.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .contact {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.right {
+    padding: 20px 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.left {
+    padding: 20px 60px;
+    font-weight: bold;
+    
+}
+
+textarea {
+    background: transparent;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    transition: 1s ease;
+}
+
+.contact button {
+    background: transparent;
+    color: black;
+    border-color: black;
+}
+
+.contact button:hover {
+    color: var(--c9);
+    background-color: var(--c1);
+}
+
+.contact button:active {
+    color: var(--c6);
+    background-color: var(--c1);
+}
+
+@media only screen and (max-width:1550px) {
+    main {
+        grid-template-columns: 50% 50%;
+    }
+
+    article {
+        grid-template-columns: 400px;
+    }
+}
+
+@media only screen and (max-width:1030px) {
+    main {
+        grid-template-columns: 100%;
+    }
+
+    article {
+        grid-template-columns: 350px;
+    }
+
+    body {
+        grid-template-rows: 100px auto auto 200px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav ul ul {
+        /* for touch device */
+        display: block;
+        position: static;
+    }
+
+    nav ul li {
+        /* display as column */
+        display: block;
+    }
+
+    nav {
+        /* remove sticky on mobile */
+        position: static;
+    }
+
+    nav a {
+        line-height: 30px;
+    }
+
+    header, footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+}
+
+/*            AICI INCEP MODIFICARILE LUI GABRIEL           */
+
+.language-icon>img {
+    height: 25px;
+    /* margin: 0 auto; */
+    padding: 5px;
+}
+
+.language-icon {
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.language-icon>img:hover {
+    background-color: var(--c1);
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.social-media .icons {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    font-size: x-large;
+    position: relative;
+    padding: 10px;
+}
+
+.social-media .icons:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    width: 80%;
+    height: 0;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.social-media .icons:hover:before {
+    height: 80%
+}
+
+.social-media .icons:hover {
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+.social-media .icons>i {
+    z-index: 1;
+}
+
+.facebook:before {
+    background-color: var(--c1);
+}
+
+.instagram:before {
+    background: var(--c1);
+}
+
+.messenger:before {
+    background: var(--c1);
+}
+
+.search-button {
+    margin-right: 10px;
+}
+
+.search-button input {
+    color: black;
+    opacity: 0.7;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: 2px solid black;
+    width: 120px;
+    height: 20px;
+    transition: 1s ease;
+}
+
+input[type="text"]:focus {
+    width: 200px;
+}
