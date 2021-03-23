@@ -1,7 +1,7 @@
-let read_url = "http://apps.loopevo.com/apis/students/students.php";
-let upd_url = "http://apps.loopevo.com/apis/students/update-student.php";
-let add_url = "http://apps.loopevo.com/apis/students/add-new-student.php";
-let del_url = "http://apps.loopevo.com/apis/students/delete.php";
+let read_url = "https://apps.loopevo.com/apis/students/students.php";
+let upd_url = "https://apps.loopevo.com/apis/students/update-student.php";
+let add_url = "https://apps.loopevo.com/apis/students/add-new-student.php";
+let del_url = "https://apps.loopevo.com/apis/students/delete.php";
 
 let dataContainer = {};
 
