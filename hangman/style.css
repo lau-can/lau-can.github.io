@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+html, body {
+	margin: 0;
+	font-family: 'Indie Flower', cursive;
+}
+
+div:not(#letterButtons,#countryToBeGuessed) {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	margin: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+button {
+	margin: 10px;
+	height: 40px;
+	width: 40px;
+	text-transform: uppercase;
+	background-color: white;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+}
+
+#letterButtons {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+}
+
+#countryToBeGuessed {
+	font-size: x-large;
+	text-align: center;
+}
+
+#clickedLetters {
+	font-size: x-large;
+}
+
+#wrongLetter {
+	color: red;
+	font-size: x-large;
+}
+
+#maxGuesses {
+	color: blue;
+	font-size: x-large;
+}

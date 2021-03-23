@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hangman Game - by Country</title>
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload='generateWord(URL)'>
+	<div id="container">
+		<h1>Hangman Game</h1>
+		<div>
+			<img id="hangmanImage" src="0.png" alt="Hangman Image">
+		</div>
+		<div>
+			<h3>Wrong guesses <span id="wrongLetter">0</span> of maximum <span id="maxGuesses">6</span>.</h3>
+		</div>
+		<div>
+			<h2>Guess the country</h2>
+			<div id="countryToBeGuessed">
+
+			</div>
+		</div>
+		<div>
+			<p id="countryPlaceholder"></p>
+		</div>
+		<div id="letterButtons">
+		</div>
+		<div>
+			<h2>Clicked letters</h2>
+			<div id="clickedLetters">
+
+			</div>
+
+		</div>
+		
+	</div>
+	
+</body>
+</html>
