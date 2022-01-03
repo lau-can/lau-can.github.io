@@ -14,7 +14,7 @@ function generateWord(url) {
 
 	let requestRead = new XMLHttpRequest();
 	requestRead.open("GET", url, true);
-	requestRead.send(null);
+	requestRead.send();
 
 	requestRead.onreadystatechange = function () {
 		if (requestRead.readyState == 4) {
